@@ -16,6 +16,7 @@ import { Component } from '@angular/core';
       <app-pizza-viewer></app-pizza-viewer>
       <app-side-viewer></app-side-viewer>
       <app-drink-viewer></app-drink-viewer>
+      <app-stock></app-stock>
     </div>
     `,
 })

@@ -13,5 +13,8 @@
     { "name": "Cola", "price": 3 },
     { "name": "Lemonade", "price": 2 },
     { "name": "Dr Salt", "price": 3 }
+  ],
+  "stock": [
+    {"stock": "D MG 01"}
   ]
 }

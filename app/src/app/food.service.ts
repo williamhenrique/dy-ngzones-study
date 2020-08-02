@@ -10,9 +10,11 @@ export class FoodService {
 
   constructor(
     private http: HttpClient,
-    private api: string
+    @Inject(String) private api: string
   ) { }
   getFood(): Observable<any> {
     return this.http.get('http://localhost:3000'+this.api);
+    // return this.http.get('http://localhost:3000');
+
   }
 }

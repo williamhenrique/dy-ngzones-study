@@ -12,6 +12,11 @@ export function sideFactory(http){
   return new FoodService(http, '/sides');
 }
 
+// for useExist
+export abstract class SideClass{
+  getFood: () => Observable<Side[]>;
+}
+
 @Component({
   selector: 'app-side-viewer',
   template: `
