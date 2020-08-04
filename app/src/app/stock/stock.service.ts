@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { FOOD_STORE_CONFIG, FoodStoreConfig } from './config';
+import { STOCK_STORE_CONFIG, StockStoreConfig } from './config';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -10,10 +10,10 @@ export class StockService {
 
   constructor(
     private http: HttpClient,
-    // @Inject(FOOD_STORE_CONFIG) private config: FoodStoreConfig
+    @Inject(STOCK_STORE_CONFIG) private config: StockStoreConfig
   ) {
     console.log('teste');
-    // console.log(this.config);
+    console.log(this.config);
   }
 
   getStock(): Observable<[{stock: string}]>{

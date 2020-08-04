@@ -1,8 +1,8 @@
 import { InjectionToken } from '@angular/core';
 
-export interface FoodStoreConfig {
+export interface StockStoreConfig {
   storeId: number,
   storeToken: string
 }
 
-export const FOOD_STORE_CONFIG = new InjectionToken<FoodStoreConfig>('FOOD_STORE_CONFIG');
+export const STOCK_STORE_CONFIG = new InjectionToken<StockStoreConfig>('STOCK_STORE_CONFIG');

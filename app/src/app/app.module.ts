@@ -18,7 +18,10 @@ import { StockModule } from './stock/stock.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    StockModule
+    StockModule.forRoot({
+      storeId: 10292,
+      storeToken: 'eca938c99a0e9ff91029dc'
+    })
   ],
   providers: [
     // { provide: API_TOKEN , useValue: '/pizzas' }
